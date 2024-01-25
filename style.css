@@ -3,6 +3,37 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
+nav{
+    display: flex;
+    background-color: black;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vw 3vw;
+}
+nav span{
+    font-size: 2vw;
+    color: #47caf5;
+}
+.nav ul {
+   font-size: 1vw;
+   display: flex;
+
+}
+
+
+
+ul li{
+    font-size: 1vw;
+  
+}
+ul  i{
+    color: white;
+    align-items: center;
+    font-size: 2vw;
+    display: none;
+}
+
+
 
 .feature-card {
    
@@ -100,10 +131,28 @@ body{
     
     
 }
+.payment-main{
+    padding: 2vw 20vw;
+    
+}
+
+#login-div{
+    padding: 2vw 6vw;
+}
 
 
 
-@media screen and (max-width:700px) {
+@media screen and (max-width:600px) {
+    ul li {
+        display: none;
+    }
+    nav span{
+        font-size: 5vw;
+    }
+    ul  i{
+        display: block;
+        font-size: 5vw;
+    }
     .feature-card-wrapper {
         justify-content: center;
         margin-left: 60px;
@@ -111,3 +160,4 @@ body{
 
     }
 }
+

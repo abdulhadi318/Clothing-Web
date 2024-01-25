@@ -6,7 +6,11 @@
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="style.css">
- 
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link
+  href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
+  rel="stylesheet"
+/>
   <style>
     body {
      
@@ -46,65 +50,75 @@
     }
   </style>
   <title>Payment Details</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <!-- Navbar -->
-<nav style="background-color: black;" class=" bg-black navbar navbar-expand-lg navbar-dark justify-content-between ">
-  <span  style="  font-size: x-large; font-weight: 500; color: white; color: rgb(90, 186, 254);"  class=" "> Winter Market</span>  
+<nav >
+  <span> Winter Market</span>    
+
+  <div  class="nav">
+      <ul class="">
+          <li    class="nav-item active">
+              <a style="color: white;" class="nav-link" href="signup.html">Login/Signup</a>
+            </li>
+          <li class="nav-item active">
+            <a style="color: white;" class="nav-link" href="home.html">Home</a>
+          </li>
+          <li class="nav-item active">
+            <a style="color: white;" class="nav-link" href="Catogeri _page.html">Catogeries</a>
+          </li>
+          <li class="nav-item active">
+              <a style="color: white;" class="nav-link" href="AddToCart.html">Add To Cart</a>
+            </li>
+          <li class="nav-item active">
+            <a style="color: white;" class="nav-link" href="Chackout.html">Checkout</a>
+          </li>
    
-    </button>
-    <div>
-        <ul style="font-size: large; font-weight: 500;" class="navbar-nav ml-auto">
-            <li    class="nav-item active">
-                <a style="color: white;" class="nav-link" href="signup.html">Login/Signup</a>
-              </li>
-            <li class="nav-item active">
-              <a style="color: white;" class="nav-link" href="home.html">Home</a>
-            </li>
-            <li class="nav-item active">
-              <a style="color: white;" class="nav-link" href="Catogeri _page.html">Catogeries</a>
-            </li>
-            <li class="nav-item active">
-                <a style="color: white;" class="nav-link" href="AddToCart.html">Add To Cart</a>
-              </li>
-            <li class="nav-item active">
-              <a style="color: white;" class="nav-link" href="Chackout.html">Checkout</a>
-            </li>
-          </ul>
-    </div>
+          <i class="ri-menu-3-line"></i>
+    
+      </ul>
+             
+        
+       
+  </div>
 </nav>
 
 
 
 
-  <div >
-    <h2 class="text-4xl text-center mt-4" >Payment Details</h2>
-    <div class="d-flex justify-content-center" id=" paymentForm">
-      <form  class="align-items-center" id="checkoutForm">
+  <div class="payment-main ">
+    <h2 class="text-4xl text-center mt-4 " >Payment Details</h2>
+    <div class="payment-detail  ">
+      <form  class="align-items-center " id="checkoutForm">
       
         <label for="cardNumber">Name:</label>
-        <input  class="border-2 rounded" type="text" placeholder="Enter Name" required>
+        <input  class="border-2 rounded p-2" type="text" placeholder="Enter Name" required>
         <label for="cardNumber">Email:</label>
-        <input  class="border-2 rounded" type="text" id="Number" placeholder="Enter Email " required>
+        <input  class="border-2 rounded p-2" type="text" id="Number" placeholder="Enter Email " required>
         <label for="cardNumber">Shipping:</label>
-        <input  class="border-2 rounded" type="text" id="Number" placeholder="Enter Shipping adress " required>
+        <input  class="border-2 rounded p-2 " type="text" id="Number" placeholder="Enter Shipping adress " required>
+        <label for="cardNumber">Contact Number:</label>
+        <input  class="border-2 rounded p-2" type="text" id="Contact" placeholder="Enter Contact number" required>
         <label for="cardNumber">Card Number:</label>
-        <input  class="border-2 rounded" type="text" id="Contact" placeholder="Enter Contact number" required>
-        <input  class="border-2 rounded" type="text" id="cardNumber" name="cardNumber" placeholder="Enter card number" required>
+        <input  class="border-2 rounded p-2" type="text" id="cardNumber" name="cardNumber" placeholder="Enter card number" required>
+        
         <label for="expiryDate">Expiry Date:</label>
-        <input  class="border-2 rounded" type="text" id="expiryDate" name="expiryDate" placeholder="MM/YYYY" required>
+        <input  class="border-2 rounded p-2" type="text" id="expiryDate" name="expiryDate" placeholder="MM/YYYY" required>
         <label for="cvv">CVV:</label>
-        <input  class="border-2 rounded" type="text" id="cvv" name="cvv" placeholder="Enter CVV" required>
-    <a  href="home.html" class="btn btn-primary ">Place and order</a> 
-        <div id="successMessage"></div>
-        <div id="errorMessage"></div>
+        <input  class="border-2 rounded p-2" type="text" id="cvv" name="cvv" placeholder="Enter CVV" required>
+   
+        <a  href="home.html" class="btn btn-primary mt-3">Place and order</a> 
+       
       </form>
       
     </div>
   </div>
 
-  <footer style="background-color: black;" class="bg-black text-light text-center pt-2 py-2 mt-4">
+  <footer style="background-color: black;" class="bg-black text-light text-center pt-2 py-2 mt-5">
     <p>&copy; 2023 Winter market . All rights reserved.</p>
     <p>Privacy Policy | Terms of Service</p>
 </footer>
